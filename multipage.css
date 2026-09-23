@@ -1,0 +1,518 @@
+/* ==================================================
+   RESET
+================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: clip;
+}
+
+
+/* ==================================================
+   BODY
+================================================== */
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+}
+
+
+/* ==================================================
+   HEADER
+================================================== */
+
+header {
+    width: 100%;
+    background-color: #d96f91;
+    color: white;
+
+    text-align: center;
+
+    padding: 42px 20px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 20px;
+}
+
+
+/* ==================================================
+   NAVBAR
+================================================== */
+
+nav {
+    width: 100%;
+    background-color: #b878c5;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 30px;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+.nav-logo {
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 35px;
+}
+
+.nav-menu a {
+    color: #3d2542;
+
+    text-decoration: none;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: white;
+}
+
+
+/* MENU AKTIF */
+
+.nav-menu a.active {
+    color: white;
+}
+
+
+/* ==================================================
+   MAIN
+================================================== */
+
+main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ==================================================
+   BERANDA
+================================================== */
+
+.beranda {
+    width: 100%;
+    max-width: 1100px;
+    min-height: 500px;
+
+    margin: 0 auto;
+    padding: 70px 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 70px;
+}
+
+
+
+.foto {
+    width: 250px;
+    flex-shrink: 0;
+
+    text-align: center;
+}
+
+.foto img {
+    width: 230px;
+    height: 230px;
+
+    display: block;
+    margin: auto;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 6px solid #d96f91;
+}
+
+
+/* ISI */
+
+.isi {
+    max-width: 650px;
+    text-align: left;
+}
+
+.halo {
+    color: #d96f91;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+.isi h2 {
+    color: black;
+
+    font-size: 40px;
+
+    margin-bottom: 18px;
+}
+
+.isi p {
+    margin-bottom: 14px;
+}
+
+
+/* ==================================================
+   TOMBOL
+================================================== */
+
+.tombol {
+    display: inline-block;
+
+    margin-top: 10px;
+    padding: 12px 25px;
+
+    background-color: #b878c5;
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 6px;
+
+    transition: 0.3s ease;
+}
+
+.tombol:hover {
+    background-color: #d96f91;
+
+    transform: translateY(-2px);
+}
+
+
+/* ==================================================
+   PROFIL
+================================================== */
+
+.profil {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+    padding: 70px 40px;
+}
+
+.profil > h2 {
+    color: black;
+
+    text-align: center;
+
+    font-size: 30px;
+
+    margin-bottom: 50px;
+}
+
+
+
+.profil-container {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 60px;
+}
+
+
+/* INFORMASI */
+
+.informasi {
+    width: 100%;
+
+    padding: 30px;
+
+    background-color: #fafafa;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.informasi h3 {
+    color: #d96f91;
+
+    text-align: center;
+
+    font-size: 22px;
+
+    margin-bottom: 30px;
+}
+
+.data {
+    margin-bottom: 22px;
+}
+
+.data b {
+    display: block;
+
+    color: #333333;
+
+    margin-bottom: 5px;
+}
+
+.data p {
+    color: #555555;
+}
+
+
+/* ==================================================
+   KONTAK
+================================================== */
+
+.kontak {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+    padding: 70px 40px;
+
+    text-align: center;
+}
+
+.kontak h2 {
+    font-size: 32px;
+
+    margin-bottom: 35px;
+}
+
+.kontak-info {
+    width: 100%;
+    max-width: 750px;
+
+    margin: 0 auto;
+    padding: 30px 40px;
+
+    background-color: white;
+
+    text-align: left;
+
+    border-radius: 15px;
+
+    border-left: 5px solid #d96f91;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.kontak-info p {
+    margin: 15px 0;
+
+    font-size: 17px;
+}
+
+.kontak-info strong {
+    color: #d96f91;
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer {
+    width: 100%;
+
+    margin-top: 30px;
+    padding: 25px 15px;
+
+    background-color: #b878c5;
+    color: white;
+
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+
+    font-weight: bold;
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 17px;
+    }
+
+
+
+    nav {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 18px;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+
+
+    .beranda {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 35px;
+
+        padding: 60px 25px;
+    }
+
+    .foto {
+        width: 100%;
+    }
+
+    .isi {
+        max-width: 650px;
+
+        text-align: center;
+    }
+
+    .isi h2 {
+        font-size: 34px;
+    }
+
+
+
+    .profil {
+        padding: 60px 25px;
+    }
+
+    .profil-container {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+
+    .kontak {
+        padding: 60px 20px;
+    }
+}
+
+
+/* ==================================================
+   HP
+================================================== */
+
+@media (max-width: 480px) {
+
+    header {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+
+
+    .nav-menu {
+        gap: 10px;
+    }
+
+    .nav-menu a {
+        font-size: 14px;
+    }
+
+
+
+    .beranda {
+        padding: 50px 20px;
+    }
+
+    .foto img {
+        width: 190px;
+        height: 190px;
+    }
+
+    .isi h2 {
+        font-size: 29px;
+    }
+
+
+
+    .profil {
+        padding: 50px 20px;
+    }
+
+    .profil > h2 {
+        font-size: 26px;
+    }
+
+    .informasi {
+        padding: 25px 20px;
+    }
+
+
+    
+
+    .kontak {
+        padding: 50px 15px;
+    }
+
+    .kontak-info {
+        padding: 25px 20px;
+    }
+}
